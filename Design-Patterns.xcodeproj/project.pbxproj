@@ -14,6 +14,7 @@
 		5607884B24654E3100C562E5 /* Design_Patterns.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 5607884924654E3100C562E5 /* Design_Patterns.xcdatamodeld */; };
 		5607884D24654E3400C562E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5607884C24654E3400C562E5 /* Assets.xcassets */; };
 		5607885024654E3400C562E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5607884E24654E3400C562E5 /* LaunchScreen.storyboard */; };
+		5607885924654FBE00C562E5 /* ChainOfResponsibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607885824654FBE00C562E5 /* ChainOfResponsibility.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +27,7 @@
 		5607884C24654E3400C562E5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		5607884F24654E3400C562E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5607885124654E3400C562E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		5607885824654FBE00C562E5 /* ChainOfResponsibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibility.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +76,7 @@
 		5607885724654E4D00C562E5 /* Chain-Of-Responsibility */ = {
 			isa = PBXGroup;
 			children = (
+				5607885824654FBE00C562E5 /* ChainOfResponsibility.swift */,
 			);
 			path = "Chain-Of-Responsibility";
 			sourceTree = "<group>";
@@ -151,6 +154,7 @@
 			files = (
 				5607884524654E3100C562E5 /* ViewController.swift in Sources */,
 				5607884124654E3100C562E5 /* AppDelegate.swift in Sources */,
+				5607885924654FBE00C562E5 /* ChainOfResponsibility.swift in Sources */,
 				5607884B24654E3100C562E5 /* Design_Patterns.xcdatamodeld in Sources */,
 				5607884324654E3100C562E5 /* SceneDelegate.swift in Sources */,
 			);
