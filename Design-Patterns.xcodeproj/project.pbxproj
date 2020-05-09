@@ -15,6 +15,7 @@
 		5607884D24654E3400C562E5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 5607884C24654E3400C562E5 /* Assets.xcassets */; };
 		5607885024654E3400C562E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5607884E24654E3400C562E5 /* LaunchScreen.storyboard */; };
 		5607885924654FBE00C562E5 /* ChainOfResponsibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607885824654FBE00C562E5 /* ChainOfResponsibility.swift */; };
+		5631992224663CBE000B884D /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631992124663CBE000B884D /* Command.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		5607884F24654E3400C562E5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		5607885124654E3400C562E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5607885824654FBE00C562E5 /* ChainOfResponsibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibility.swift; sourceTree = "<group>"; };
+		5631992124663CBE000B884D /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 		5607883F24654E3100C562E5 /* Design-Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				5631992024663CAF000B884D /* Command */,
 				5607885724654E4D00C562E5 /* Chain-Of-Responsibility */,
 				5607884024654E3100C562E5 /* AppDelegate.swift */,
 				5607884224654E3100C562E5 /* SceneDelegate.swift */,
@@ -79,6 +82,14 @@
 				5607885824654FBE00C562E5 /* ChainOfResponsibility.swift */,
 			);
 			path = "Chain-Of-Responsibility";
+			sourceTree = "<group>";
+		};
+		5631992024663CAF000B884D /* Command */ = {
+			isa = PBXGroup;
+			children = (
+				5631992124663CBE000B884D /* Command.swift */,
+			);
+			path = Command;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,6 +168,7 @@
 				5607885924654FBE00C562E5 /* ChainOfResponsibility.swift in Sources */,
 				5607884B24654E3100C562E5 /* Design_Patterns.xcdatamodeld in Sources */,
 				5607884324654E3100C562E5 /* SceneDelegate.swift in Sources */,
+				5631992224663CBE000B884D /* Command.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

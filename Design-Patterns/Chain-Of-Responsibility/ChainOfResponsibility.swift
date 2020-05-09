@@ -2,7 +2,7 @@
 //  ChainOfResponsibility.swift
 //  Design-Patterns
 //
-//  Created by 彭倩倩 on 2020/5/8.
+//  Created by liupengkun on 2020/5/8.
 //  Copyright © 2020 刘朋坤. All rights reserved.
 //
 

@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  Design-Patterns
 //
-//  Created by 彭倩倩 on 2020/5/8.
+//  Created by liupengkun on 2020/5/8.
 //  Copyright © 2020 刘朋坤. All rights reserved.
 //
 
@@ -13,7 +13,11 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        chainOfResponsibility()
+        // 责任链模式
+//        chainOfResponsibility()
+        
+        // 命令模式
+        command()
     }
     
     // MARK: 责任链模式
@@ -49,7 +53,23 @@ class ViewController: UIViewController {
             userKaren.fixResult(str: "适配问题暂时保留")
         }
     }
-
+    
+    // MARK: 命令模式
+    func command() {
+        let command = Command.init()
+        
+        let volumeValue = 5
+        print("当前音量：", volumeValue)
+        
+        let volumeValue1 = command.addVolume(volumeValue: volumeValue)
+        print("当前音量：", volumeValue1)
+        
+        let volumeValue2 = command.addVolume(volumeValue: volumeValue1)
+        print("当前音量：", volumeValue2)
+        
+        let volumeValue3 = command.reduceVolume(volumeValue: volumeValue2)
+        print("当前音量：", volumeValue3)
+    }
 
 }
 
