@@ -17,6 +17,13 @@
 		5607885924654FBE00C562E5 /* ChainOfResponsibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607885824654FBE00C562E5 /* ChainOfResponsibility.swift */; };
 		5631992224663CBE000B884D /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631992124663CBE000B884D /* Command.swift */; };
 		56319925246640DA000B884D /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56319924246640DA000B884D /* Interpreter.swift */; };
+		56319928246646CC000B884D /* Iterator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56319927246646CC000B884D /* Iterator.swift */; };
+		5631992B24664C24000B884D /* SimpleFactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631992A24664C24000B884D /* SimpleFactoryPattern.swift */; };
+		5631992E2466506E000B884D /* FactoryMethodPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631992D2466506E000B884D /* FactoryMethodPattern.swift */; };
+		56319931246652F5000B884D /* AbstractFactoryPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56319930246652F5000B884D /* AbstractFactoryPattern.swift */; };
+		5631993424665800000B884D /* SingletonPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631993324665800000B884D /* SingletonPattern.swift */; };
+		5631993724665CAE000B884D /* BuilderPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631993624665CAE000B884D /* BuilderPattern.swift */; };
+		5631993A24666B2E000B884D /* PrototypePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631993924666B2E000B884D /* PrototypePattern.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +39,13 @@
 		5607885824654FBE00C562E5 /* ChainOfResponsibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibility.swift; sourceTree = "<group>"; };
 		5631992124663CBE000B884D /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
 		56319924246640DA000B884D /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
+		56319927246646CC000B884D /* Iterator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iterator.swift; sourceTree = "<group>"; };
+		5631992A24664C24000B884D /* SimpleFactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleFactoryPattern.swift; sourceTree = "<group>"; };
+		5631992D2466506E000B884D /* FactoryMethodPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FactoryMethodPattern.swift; sourceTree = "<group>"; };
+		56319930246652F5000B884D /* AbstractFactoryPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AbstractFactoryPattern.swift; sourceTree = "<group>"; };
+		5631993324665800000B884D /* SingletonPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SingletonPattern.swift; sourceTree = "<group>"; };
+		5631993624665CAE000B884D /* BuilderPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BuilderPattern.swift; sourceTree = "<group>"; };
+		5631993924666B2E000B884D /* PrototypePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypePattern.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -64,6 +78,13 @@
 		5607883F24654E3100C562E5 /* Design-Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				5631993824666B1E000B884D /* Prototype-Pattern */,
+				5631993524665C9B000B884D /* Builder-Pattern */,
+				56319932246657F3000B884D /* Singleton-Pattern */,
+				5631992F246652DA000B884D /* Abstract-Factory-Pattern */,
+				5631992C2466505C000B884D /* Factory-Method-Pattern */,
+				5631992924664C08000B884D /* Simple-Factory-Pattern */,
+				56319926246646C2000B884D /* Iterator */,
 				56319923246640D0000B884D /* Interpreter */,
 				5631992024663CAF000B884D /* Command */,
 				5607885724654E4D00C562E5 /* Chain-Of-Responsibility */,
@@ -101,6 +122,62 @@
 				56319924246640DA000B884D /* Interpreter.swift */,
 			);
 			path = Interpreter;
+			sourceTree = "<group>";
+		};
+		56319926246646C2000B884D /* Iterator */ = {
+			isa = PBXGroup;
+			children = (
+				56319927246646CC000B884D /* Iterator.swift */,
+			);
+			path = Iterator;
+			sourceTree = "<group>";
+		};
+		5631992924664C08000B884D /* Simple-Factory-Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				5631992A24664C24000B884D /* SimpleFactoryPattern.swift */,
+			);
+			path = "Simple-Factory-Pattern";
+			sourceTree = "<group>";
+		};
+		5631992C2466505C000B884D /* Factory-Method-Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				5631992D2466506E000B884D /* FactoryMethodPattern.swift */,
+			);
+			path = "Factory-Method-Pattern";
+			sourceTree = "<group>";
+		};
+		5631992F246652DA000B884D /* Abstract-Factory-Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				56319930246652F5000B884D /* AbstractFactoryPattern.swift */,
+			);
+			path = "Abstract-Factory-Pattern";
+			sourceTree = "<group>";
+		};
+		56319932246657F3000B884D /* Singleton-Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				5631993324665800000B884D /* SingletonPattern.swift */,
+			);
+			path = "Singleton-Pattern";
+			sourceTree = "<group>";
+		};
+		5631993524665C9B000B884D /* Builder-Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				5631993624665CAE000B884D /* BuilderPattern.swift */,
+			);
+			path = "Builder-Pattern";
+			sourceTree = "<group>";
+		};
+		5631993824666B1E000B884D /* Prototype-Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				5631993924666B2E000B884D /* PrototypePattern.swift */,
+			);
+			path = "Prototype-Pattern";
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -175,9 +252,16 @@
 			buildActionMask = 2147483647;
 			files = (
 				5607884524654E3100C562E5 /* ViewController.swift in Sources */,
+				56319931246652F5000B884D /* AbstractFactoryPattern.swift in Sources */,
+				5631993424665800000B884D /* SingletonPattern.swift in Sources */,
 				5607884124654E3100C562E5 /* AppDelegate.swift in Sources */,
 				5607885924654FBE00C562E5 /* ChainOfResponsibility.swift in Sources */,
+				5631993A24666B2E000B884D /* PrototypePattern.swift in Sources */,
+				5631993724665CAE000B884D /* BuilderPattern.swift in Sources */,
+				56319928246646CC000B884D /* Iterator.swift in Sources */,
+				5631992B24664C24000B884D /* SimpleFactoryPattern.swift in Sources */,
 				5607884B24654E3100C562E5 /* Design_Patterns.xcdatamodeld in Sources */,
+				5631992E2466506E000B884D /* FactoryMethodPattern.swift in Sources */,
 				5607884324654E3100C562E5 /* SceneDelegate.swift in Sources */,
 				5631992224663CBE000B884D /* Command.swift in Sources */,
 				56319925246640DA000B884D /* Interpreter.swift in Sources */,
