@@ -17,7 +17,9 @@ class ViewController: UIViewController {
 //        chainOfResponsibility()
         
         // 命令模式
-        command()
+//        command()
+        
+        interpret()
     }
     
     // MARK: 责任链模式
@@ -69,6 +71,18 @@ class ViewController: UIViewController {
         
         let volumeValue3 = command.reduceVolume(volumeValue: volumeValue2)
         print("当前音量：", volumeValue3)
+    }
+    
+    // MARK: 解释器
+    func interpret() {
+        let interpret1 = InterpreterSample1.init()
+        let interpret2 = InterpreterSample2.init()
+        let interpret3 = Interpreter.init()
+        let list = [interpret1, interpret2, interpret3]
+        list.forEach { (list_element) in
+            print(list_element.interpret(content: "解释器"))
+        }
+        
     }
 
 }

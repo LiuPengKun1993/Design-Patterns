@@ -16,6 +16,7 @@
 		5607885024654E3400C562E5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5607884E24654E3400C562E5 /* LaunchScreen.storyboard */; };
 		5607885924654FBE00C562E5 /* ChainOfResponsibility.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5607885824654FBE00C562E5 /* ChainOfResponsibility.swift */; };
 		5631992224663CBE000B884D /* Command.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631992124663CBE000B884D /* Command.swift */; };
+		56319925246640DA000B884D /* Interpreter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56319924246640DA000B884D /* Interpreter.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +31,7 @@
 		5607885124654E3400C562E5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		5607885824654FBE00C562E5 /* ChainOfResponsibility.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChainOfResponsibility.swift; sourceTree = "<group>"; };
 		5631992124663CBE000B884D /* Command.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Command.swift; sourceTree = "<group>"; };
+		56319924246640DA000B884D /* Interpreter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interpreter.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -62,6 +64,7 @@
 		5607883F24654E3100C562E5 /* Design-Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				56319923246640D0000B884D /* Interpreter */,
 				5631992024663CAF000B884D /* Command */,
 				5607885724654E4D00C562E5 /* Chain-Of-Responsibility */,
 				5607884024654E3100C562E5 /* AppDelegate.swift */,
@@ -90,6 +93,14 @@
 				5631992124663CBE000B884D /* Command.swift */,
 			);
 			path = Command;
+			sourceTree = "<group>";
+		};
+		56319923246640D0000B884D /* Interpreter */ = {
+			isa = PBXGroup;
+			children = (
+				56319924246640DA000B884D /* Interpreter.swift */,
+			);
+			path = Interpreter;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -169,6 +180,7 @@
 				5607884B24654E3100C562E5 /* Design_Patterns.xcdatamodeld in Sources */,
 				5607884324654E3100C562E5 /* SceneDelegate.swift in Sources */,
 				5631992224663CBE000B884D /* Command.swift in Sources */,
+				56319925246640DA000B884D /* Interpreter.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
