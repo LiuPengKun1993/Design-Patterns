@@ -41,7 +41,15 @@ class ViewController: UIViewController {
 //        builderPattern()
         
         // 原型模式
-        prototypePattern()
+//        prototypePattern()
+        
+        // 外观模式
+//        facadePattern()
+        
+        // 适配器
+//        adapterPattern()
+        
+        bridgePattern()
     }
     
     // MARK: 责任链模式
@@ -195,7 +203,29 @@ class ViewController: UIViewController {
         
         print("\n\n---original---\n\(studentInfo)\n\(studentInfo.studentName)\n\(studentInfo.studentID)\n\(studentInfo.studentAge)\n\(studentInfo.studentGender)\n\(studentInfo.prototypePattern!.subjectAnswer)\n\n")
         print("---original copy---\n\(studentInfo_copy)\n\(studentInfo_copy.studentName)\n\(studentInfo_copy.studentID)\n\(studentInfo_copy.studentAge)\n\(studentInfo_copy.studentGender)\n\(studentInfo_copy.prototypePattern!.subjectAnswer)")
-
+    }
+    
+    // MARK: 外观模式
+    func facadePattern() {
+        let facadePattern = FacadePattern.init()
+        // 开始工作，打开所有软件
+        facadePattern.allON()
+        // 下班，关闭所有软件
+        facadePattern.allOFF()
+        
+        // 晚上加班
+        facadePattern.codingFlutter()
+    }
+    
+    // MARK: 适配器
+    func adapterPattern() {
+        let target = OldDeveloperAdapter.init(name: "liu", gender: "man")
+        let newAdapter = NewDeveloperAdapter.init(target: target)
+        print("name:\(newAdapter.developer_name)","\ngender:\(newAdapter.developer_gender)")
+    }
+    
+    func bridgePattern() {
+        
     }
 
 }
