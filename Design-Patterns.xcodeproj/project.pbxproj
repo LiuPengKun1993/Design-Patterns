@@ -27,6 +27,9 @@
 		5631993D24668268000B884D /* FacadePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631993C24668268000B884D /* FacadePattern.swift */; };
 		563199402466907D000B884D /* AdapterPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631993F2466907D000B884D /* AdapterPattern.swift */; };
 		563199432466A801000B884D /* BridgePattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563199422466A801000B884D /* BridgePattern.swift */; };
+		563199462468E3D6000B884D /* ProxyPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563199452468E3D6000B884D /* ProxyPattern.swift */; };
+		563199492468E8D2000B884D /* DecoratorPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 563199482468E8D2000B884D /* DecoratorPattern.swift */; };
+		5631994C2468FB29000B884D /* FlyweightPattern.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5631994B2468FB29000B884D /* FlyweightPattern.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -52,6 +55,9 @@
 		5631993C24668268000B884D /* FacadePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FacadePattern.swift; sourceTree = "<group>"; };
 		5631993F2466907D000B884D /* AdapterPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AdapterPattern.swift; sourceTree = "<group>"; };
 		563199422466A801000B884D /* BridgePattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BridgePattern.swift; sourceTree = "<group>"; };
+		563199452468E3D6000B884D /* ProxyPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProxyPattern.swift; sourceTree = "<group>"; };
+		563199482468E8D2000B884D /* DecoratorPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DecoratorPattern.swift; sourceTree = "<group>"; };
+		5631994B2468FB29000B884D /* FlyweightPattern.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlyweightPattern.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -84,6 +90,9 @@
 		5607883F24654E3100C562E5 /* Design-Patterns */ = {
 			isa = PBXGroup;
 			children = (
+				5631994A2468FB1C000B884D /* Flyweight-Pattern */,
+				563199472468E8C1000B884D /* Decorator-Pattern */,
+				563199442468E3C1000B884D /* Proxy-Pattern */,
 				563199412466A66A000B884D /* Bridge-Pattern */,
 				5631993E2466906F000B884D /* Adapter-Pattern */,
 				5631993B2466825A000B884D /* Facade-Pattern */,
@@ -213,6 +222,30 @@
 			path = "Bridge-Pattern";
 			sourceTree = "<group>";
 		};
+		563199442468E3C1000B884D /* Proxy-Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				563199452468E3D6000B884D /* ProxyPattern.swift */,
+			);
+			path = "Proxy-Pattern";
+			sourceTree = "<group>";
+		};
+		563199472468E8C1000B884D /* Decorator-Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				563199482468E8D2000B884D /* DecoratorPattern.swift */,
+			);
+			path = "Decorator-Pattern";
+			sourceTree = "<group>";
+		};
+		5631994A2468FB1C000B884D /* Flyweight-Pattern */ = {
+			isa = PBXGroup;
+			children = (
+				5631994B2468FB29000B884D /* FlyweightPattern.swift */,
+			);
+			path = "Flyweight-Pattern";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -289,6 +322,8 @@
 				5631993424665800000B884D /* SingletonPattern.swift in Sources */,
 				5631993D24668268000B884D /* FacadePattern.swift in Sources */,
 				5607884124654E3100C562E5 /* AppDelegate.swift in Sources */,
+				563199462468E3D6000B884D /* ProxyPattern.swift in Sources */,
+				563199492468E8D2000B884D /* DecoratorPattern.swift in Sources */,
 				5607885924654FBE00C562E5 /* ChainOfResponsibility.swift in Sources */,
 				5631993A24666B2E000B884D /* PrototypePattern.swift in Sources */,
 				5631993724665CAE000B884D /* BuilderPattern.swift in Sources */,
@@ -300,6 +335,7 @@
 				5631992224663CBE000B884D /* Command.swift in Sources */,
 				563199402466907D000B884D /* AdapterPattern.swift in Sources */,
 				56319925246640DA000B884D /* Interpreter.swift in Sources */,
+				5631994C2468FB29000B884D /* FlyweightPattern.swift in Sources */,
 				563199432466A801000B884D /* BridgePattern.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

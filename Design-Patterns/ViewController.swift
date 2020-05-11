@@ -49,7 +49,17 @@ class ViewController: UIViewController {
         // 适配器
 //        adapterPattern()
         
-        bridgePattern()
+        // 桥接模式
+//        bridgePattern()
+        
+        // 代理模式
+//        proxyPattern()
+        
+        // 修饰模式
+//        decoratorPattern()
+        
+        // 享元模式
+        flyweightPattern()
     }
     
     // MARK: 责任链模式
@@ -224,9 +234,64 @@ class ViewController: UIViewController {
         print("name:\(newAdapter.developer_name)","\ngender:\(newAdapter.developer_gender)")
     }
     
+    // MARK: 桥接模式
     func bridgePattern() {
+        let teacherBob = TeacherBob.init()
+        let teacherLinda = TeacherLinda.init()
+        let teacherSam = TeacherSam.init()
         
+        let seniorLeave = SeniorLeave.init()
+        let intermediateLeave = IntermediateLeave.init()
+        let juniorLeave = JuniorLeave.init()
+
+        teacherBob.rating(level: seniorLeave)
+        teacherBob.rating(level: intermediateLeave)
+        
+        teacherSam.rating(level: seniorLeave)
+        teacherSam.rating(level: juniorLeave)
+        
+        teacherLinda.rating(level: intermediateLeave)
+        teacherLinda.rating(level: juniorLeave)
+    }
+    
+    // MARK: 代理模式
+    func proxyPattern() {
+        let proxyInterface = ProxyInterface.init()
+        proxyInterface.implementationProtocol()
+    }
+    
+    // MARK: 修饰模式
+    func decoratorPattern() {
+        var learn: LearnProtocol = LearnInfo()
+        print("学习时间:\(learn.learnTime)天\n学习内容:\(learn.learnScope)\n")
+        
+        learn = RuntimeDecoratorPattern(learn: learn)
+        print("学习时间:\(learn.learnTime)天\n学习内容:\(learn.learnScope)\n")
+
+        learn = RunloopDecoratorPattern(learn: learn)
+        print("学习时间:\(learn.learnTime)天\n学习内容:\(learn.learnScope)")
     }
 
+    // MARK: 享元模式
+    func flyweightPattern() {
+        // 享元模式，只有13M+
+        let factory = FlyweightPhoneFactory.init()
+        var array:[PhoneInfo] = []
+        for _ in 1...1000000 {
+            let type = arc4random_uniform(3)
+            let phone = factory.phoneWithType(type: PhoneEnum(rawValue: Int(type))!)
+            array.append(phone)
+            factory.detailsType()
+        }
+        print(array)
+        
+        // 普通方法，飙到130M+
+//        var array:[PhoneInfo] = []
+//        for _ in 1...1000000 {
+//            let phone = PhoneInfo.init()
+//            array.append(phone)
+//        }
+//        print(array)
+    }
 }
 
