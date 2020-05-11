@@ -7,10 +7,10 @@
 
 - [简单工厂模式（Simple Factory Pattern）](#11-简单工厂模式simple-factory-pattern)
 - [工厂方法模式（Factory Method Pattern）](#12-工厂方法模式factory-method-pattern)
-- 抽象工厂模式（Abstract Factory Pattern）
-- 单例模式（Singleton Pattern）
-- 生成器模式（Builder Pattern）
-- 原型模式（Prototype Pattern）
+- [抽象工厂模式（Abstract Factory Pattern）](#13-抽象工厂模式abstract-factory-pattern)
+- [单例模式（Singleton Pattern）](#14-单例模式singleton-pattern)
+- [生成器模式（Builder Pattern）](#15-生成器模式builder-pattern)
+- [原型模式（Prototype Pattern）](#16-原型模式prototype-pattern)
 
 #### 1.1 简单工厂模式（Simple Factory Pattern）
 
@@ -46,12 +46,12 @@
 
 结构型设计模式分为：
 
-- 外观模式（Facade Pattern）
-- 适配器模式（Adapter Pattern）
-- 桥接模式（Simple Factory Pattern）
-- 代理模式（Proxy Pattern）
-- 装饰者模式（Decorator Pattern）
-- 享元模式（Flyweight Pattern）
+- [外观模式（Facade Pattern）](#21-外观模式facade-pattern)
+- [适配器模式（Adapter Pattern）](#22-适配器模式adapter-pattern)
+- [桥接模式（Simple Factory Pattern）](#23-桥接模式simple-factory-pattern)
+- [代理模式（Proxy Pattern）](#24-代理模式proxy-pattern)
+- [装饰者模式（Decorator Pattern）](#25-装饰者模式decorator-pattern)
+- [享元模式（Flyweight Pattern）](#26-享元模式flyweight-pattern)
 
 #### 2.1 外观模式（Facade Pattern）
 
