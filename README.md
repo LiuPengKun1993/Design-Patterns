@@ -5,8 +5,8 @@
 
 创建型设计模式分为：
 
-- 简单工厂模式（Simple Factory Pattern）
-- 工厂方法模式（Factory Method Pattern）
+- [简单工厂模式（Simple Factory Pattern）](#### 1.1 简单工厂模式（Simple Factory Pattern）)
+- [工厂方法模式（Factory Method Pattern）](#### 1.2 工厂方法模式（Factory Method Pattern）)
 - 抽象工厂模式（Abstract Factory Pattern）
 - 单例模式（Singleton Pattern）
 - 生成器模式（Builder Pattern）
@@ -44,6 +44,15 @@
 
 ### 2. 结构型设计模式
 
+结构型设计模式分为：
+
+- 外观模式（Facade Pattern）
+- 适配器模式（Adapter Pattern）
+- 桥接模式（Simple Factory Pattern）
+- 代理模式（Proxy Pattern）
+- 装饰者模式（Decorator Pattern）
+- 享元模式（Flyweight Pattern）
+
 #### 2.1 外观模式（Facade Pattern）
 
 - 外观模式定义了一个高层接口，为子系统中的一组接口提供一个统一的接口。外观模式又称为门面模式，它是一种结构型设计模式模式。
@@ -53,3 +62,23 @@
 
 - 适配器模式(Adapter Pattern) ：将一个接口转换成客户希望的另一个接口，使得原本由于接口不兼容而不能一起工作的那些类可以一起工作。适配器模式的别名是包装器模式（Wrapper），是一种结构型设计模式。
 - Demo 地址: [AdapterPattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Adapter-Pattern/AdapterPattern.swift)
+
+#### 2.3 桥接模式（Simple Factory Pattern）
+
+- 桥接模式(Simple Factory Pattern)：将抽象部分与它的实现部分分离,使它们都可以独立地变化。
+- Demo 地址: [BridgePattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Bridge-Pattern/BridgePattern.swift)
+
+#### 2.4 代理模式（Proxy Pattern）
+
+- 代理模式(Proxy Pattern) ：为某个对象提供一个代理，并由这个代理对象控制对原对象的访问。
+- Demo 地址: [ProxyPattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Proxy-Pattern/ProxyPattern.swift)
+
+#### 2.5 装饰者模式（Decorator Pattern）
+
+- 装饰模式(Decorator Pattern) ：不改变原有对象的前提下，动态地给一个对象增加一些额外的功能。
+- Demo 地址: [DecoratorPattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Decorator-Pattern/DecoratorPattern.swift)
+
+#### 2.6 享元模式（Flyweight Pattern）
+
+- 享元模式(Flyweight Pattern)：运用共享技术复用大量细粒度的对象,降低程序内存的占用,提高程序的性能。
+- Demo 地址: [FlyweightPattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Flyweight-Pattern/FlyweightPattern.swift)
