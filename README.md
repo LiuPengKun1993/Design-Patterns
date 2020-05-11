@@ -5,8 +5,8 @@
 
 创建型设计模式分为：
 
-- [简单工厂模式（Simple Factory Pattern）](#### 1.1 简单工厂模式（Simple Factory Pattern）)
-- [工厂方法模式（Factory Method Pattern）](#### 1.2 工厂方法模式（Factory Method Pattern）)
+- [简单工厂模式（Simple Factory Pattern）](#11-简单工厂模式simple-factory-pattern)
+- [工厂方法模式（Factory Method Pattern）](#12-工厂方法模式factory-method-pattern)
 - 抽象工厂模式（Abstract Factory Pattern）
 - 单例模式（Singleton Pattern）
 - 生成器模式（Builder Pattern）
