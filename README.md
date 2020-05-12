@@ -82,3 +82,51 @@
 
 - 享元模式(Flyweight Pattern)：运用共享技术复用大量细粒度的对象,降低程序内存的占用,提高程序的性能。
 - Demo 地址: [FlyweightPattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Flyweight-Pattern/FlyweightPattern.swift)
+
+
+### 3. 行为型设计模式
+
+#### 3.1 责任链模式（Chain of Responsibility Pattern）
+
+- 责任链模式（Chain of Responsibility Pattern）：为请求创建了一个接收者对象的链，每个接收者都包含对另一个接收者的引用。如果一个对象不能处理该请求，那么它会把相同的请求传给下一个接收者，依此类推。
+- Demo 地址: [ChainOfResponsibility.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Chain-Of-Responsibility/ChainOfResponsibility.swift)
+
+#### 3.2 命令模式（Command Pattern）
+
+- 命令（Command）模式：将一个请求封装为一个对象，使发出请求的责任和执行请求的责任分割开。这样两者之间通过命令对象进行沟通，这样方便将命令对象进行储存、传递、调用、增加与管理。
+- Demo 地址: [Command.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Command/Command.swift)
+
+#### 3.3 解释器模式（Interpreter Pattern）
+
+- 解释器（Interpreter）模式：给分析对象定义一个语言，并定义该语言的文法表示，再设计一个解析器来解释语言中的句子。也就是说，用编译语言的方式来分析应用中的实例。这种模式实现了文法表达式处理的接口，该接口解释一个特定的上下文。
+- Demo 地址: [Interpreter.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Interpreter/Interpreter.swift)
+
+#### 3.4 迭代器模式（Iterator Pattern）
+
+- 迭代器（Iterator），提供一种方法顺序访问一个聚合对象中的各种元素，而又不暴露该对象的内部表示。
+- Demo 地址: [Iterator.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Iterator/Iterator.swift)
+
+#### 3.5 模板模式（Template Method Pattern）
+
+- 在模板模式（Template Method Pattern）中，定义一个操作中的算法的框架，而将一些步骤的执行延迟到子类中，使得子类可以在不改变算法的结构的前提下即可重新定义该算法的某些特定步骤。
+- Demo 地址: [TemplateMethodPattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Template-Method-Pattern/TemplateMethodPattern.swift)
+
+#### 3.6 策略模式（Strategy Pattern）
+
+- 策略模式(Strategy Pattern)：定义一系列算法，将每一个算法封装起来，并让它们可以相互替换。
+- Demo 地址: [StrategyPattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Strategy-Pattern/StrategyPattern.swift)
+
+#### 3.7 状态模式（State Pattern）
+
+- 在状态模式（State Pattern）：允许一个对象在其内部状态改变时，改变它的行为。
+- Demo 地址: [StatePattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/State-Pattern/StatePattern.swift)
+
+#### 3.8 观察者模式（Observer Pattern）
+
+- 观察者模式(Observer Pattern)：定义对象间的一种一对多的依赖关系，使得每当一个对象状态发生改变时，其相关依赖对象都可以到通知并做相应针对性的处理。
+- Demo 地址: [ObserverPattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Observer-Pattern/ObserverPattern.swift)
+
+#### 3.9 中间者模式（Mediator Pattern）
+
+- 中介者模式(Mediator Pattern)：用一个中介对象来封装一系列的对象交互，中介者使各对象之间不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。
+- Demo 地址: [MediatorPattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Mediator-Pattern/MediatorPattern.swift)
