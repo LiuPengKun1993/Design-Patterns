@@ -1,5 +1,20 @@
 # 设计模式（Design-Patterns）
 
+### 概览
+
+| 💪 [创建型模式](#1-创建型设计模式)                                 | 🤗 [结构型模式](#2-结构型设计模式)| 🏃 [行为型模式](#3-行为型设计模式) | 
+| --- | --- | --- |
+|[简单工厂模式（Simple Factory Pattern）](#11-简单工厂模式simple-factory-pattern)|[外观模式（Facade Pattern）](#21-外观模式facade-pattern)|[责任链模式（Chain of Responsibility Pattern）](#31-责任链模式chain-of-responsibility-pattern)|
+|[工厂方法模式（Factory Method Pattern）](#12-工厂方法模式factory-method-pattern)|[适配器模式（Adapter Pattern）](#22-适配器模式adapter-pattern)|[命令模式（Command Pattern）](#32-命令模式command-pattern)|
+|[抽象工厂模式（Abstract Factory Pattern）](#13-抽象工厂模式abstract-factory-pattern)|[桥接模式（Simple Factory Pattern）](#23-桥接模式simple-factory-pattern)|[解释器模式（Interpreter Pattern）](#33-解释器模式interpreter-pattern)|
+|[单例模式（Singleton Pattern）](#14-单例模式singleton-pattern)|[代理模式（Proxy Pattern）](#24-代理模式proxy-pattern)|[迭代器模式（Iterator Pattern）](#34-迭代器模式iterator-pattern)|
+|[生成器模式（Builder Pattern）](#15-生成器模式builder-pattern)|[装饰者模式（Decorator Pattern）](#25-装饰者模式decorator-pattern)|[模板模式（Template Method Pattern）](#35-模板模式template-method-pattern)|
+|[原型模式（Prototype Pattern）](#16-原型模式prototype-pattern)|[享元模式（Flyweight Pattern）](#26-享元模式flyweight-pattern)|[策略模式（Strategy Pattern）](#36-策略模式strategy-pattern)|
+|||[状态模式（State Pattern）](#37-状态模式state-pattern)|
+|||[观察者模式（Observer Pattern）](#38-观察者模式observer-pattern)|
+|||[中间者模式（Mediator Pattern）](#39-中间者模式mediator-pattern)|
+
+
 
 ### 1. 创建型设计模式
 
@@ -86,6 +101,19 @@
 
 ### 3. 行为型设计模式
 
+行为型设计模式分为：
+
+- [责任链模式（Chain of Responsibility Pattern）](#31-责任链模式chain-of-responsibility-pattern)
+- [命令模式（Command Pattern）](#32-命令模式command-pattern)
+- [解释器模式（Interpreter Pattern）](#33-解释器模式interpreter-pattern)
+- [迭代器模式（Iterator Pattern）](#34-迭代器模式iterator-pattern)
+- [模板模式（Template Method Pattern）](#35-模板模式template-method-pattern)
+- [策略模式（Strategy Pattern）](#36-策略模式strategy-pattern)
+- [状态模式（State Pattern）](#37-状态模式state-pattern)
+- [观察者模式（Observer Pattern）](#38-观察者模式observer-pattern)
+- [中间者模式（Mediator Pattern）](#39-中间者模式mediator-pattern)
+
+
 #### 3.1 责任链模式（Chain of Responsibility Pattern）
 
 - 责任链模式（Chain of Responsibility Pattern）：为请求创建了一个接收者对象的链，每个接收者都包含对另一个接收者的引用。如果一个对象不能处理该请求，那么它会把相同的请求传给下一个接收者，依此类推。
@@ -130,3 +158,7 @@
 
 - 中介者模式(Mediator Pattern)：用一个中介对象来封装一系列的对象交互，中介者使各对象之间不需要显式地相互引用，从而使其耦合松散，而且可以独立地改变它们之间的交互。
 - Demo 地址: [MediatorPattern.swift](https://github.com/liuzhongning/Design-Patterns/blob/master/Design-Patterns/Mediator-Pattern/MediatorPattern.swift)
+
+# License
+
+This repository is released under [MIT License](https://github.com/liuzhongning/Design-Patterns/blob/master/LICENSE)
