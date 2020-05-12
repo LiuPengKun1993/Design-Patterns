@@ -59,7 +59,23 @@ class ViewController: UIViewController {
 //        decoratorPattern()
         
         // 享元模式
-        flyweightPattern()
+//        flyweightPattern()
+        
+        // 模板模式
+//        templateMethodPattern()
+        
+        // 策略模式
+//        strategyPattern()
+        
+        // 状态模式
+//        statePattern()
+        
+        // 观察者模式
+//        observerPattern()
+        
+        // 中间者模式
+        mediatorPattern()
+            
     }
     
     // MARK: 责任链模式
@@ -292,6 +308,77 @@ class ViewController: UIViewController {
 //            array.append(phone)
 //        }
 //        print(array)
+    }
+    
+    // MARK: 模板模式
+    func templateMethodPattern() {
+        let goCompanyMode1 = GoCompanyBySubway.init()
+        goCompanyMode1.goToWork()
+        
+        let goCompanyMode2 = GoCompanyByCar.init()
+        goCompanyMode2.goToWork()
+    }
+    
+    // MARK: 策略模式
+    func strategyPattern() {
+        let a = 18, b = 6
+        print("a = \(a), b = \(b)")
+        
+        let strategy = StrategyPattern.init()
+        strategy.operation = TwoNumOperationAdd.init()
+        print("a + b = \(strategy.excuteOperation(a: a, b: b))")
+        
+        strategy.operation = TwoNumOperationSubstract.init()
+        print("a - b = \(strategy.excuteOperation(a: a, b: b))")
+
+        strategy.operation = TwoNumOperationMultiply.init()
+        print("a * b = \(strategy.excuteOperation(a: a, b: b))")
+
+        strategy.operation = TwoNumOperationDivision.init()
+        print("a / b = \(strategy.excuteOperation(a: a, b: b))")
+    }
+    
+    // MARK: 状态模式
+    func statePattern() {
+        let coder = Coder.init()
+        coder.state = StateSleepingPattern.init(coder: coder)
+        coder.wakeUp() // 睡醒了
+        coder.coding() // 开始编码
+        coder.eating() // 开始吃饭
+        coder.sleeping() // 开始睡觉
+        coder.coding() // 已经睡着了，无法再 coding
+        coder.eating() // 已经睡着了，无法再 eating
+        coder.sleeping() // 已经睡着了，无法更改状态
+        coder.wakeUp() // 睡醒了
+        coder.coding() // 开始编码
+    }
+    
+    // MARK: 观察者模式
+    func observerPattern() {
+        let observerInstance = Observer()
+        let testChambers = TestChambers()
+        testChambers.observer = observerInstance
+        for num in 1...5 {
+            testChambers.testNumber = num
+            sleep(1)
+        }
+    }
+    
+    // MARK: 中间者模式
+    func mediatorPattern() {
+        let mediator = MediatorPattern.init()
+        
+        let user1 = MediatorUser.init(name: "Bob", mediator: mediator)
+        let user2 = MediatorUser.init(name: "Sam", mediator: mediator)
+        let user3 = MediatorUser.init(name: "Linda", mediator: mediator)
+        
+        mediator.addUser(user: user1)
+        mediator.addUser(user: user2)
+        mediator.addUser(user: user3)
+
+        user1.sendMessage(message: "你好")
+        user2.sendMessage(message: "hello")
+        user3.sendMessage(message: "nice to meet you")
     }
 }
 
